@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    font-family: "poppins", sans-serif;
+    cursor: pointer;
+    /* min-height: 100vh; */
+}
+
+.img-size{
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left-box:hover{
+    cursor: pointer;
+}
+
+.left-bar:hover{
+    background-color: hsl(252, 30%, 95%);
+    border-radius: 20%;
+}
+
+.stories {
+    height: 12rem;
+    gap: 0.5rem;
+}
+
+.story {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.liked span{
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    margin-left: -0.6rem;
+}
+
+.profile-photo1{
+    position: relative;
+}
+
+.active-s{
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: lawngreen;
+    right: 0;
+    bottom: 0;
+    translate: -20% -100%;
+}
+
+.bg-custom {
+    background-color: hsla(230, 12%, 96%, .6);
+    backdrop-filter: blur(16px);
+}
+
+.left-hov:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 992px) {
+
+    .left-bar h5 {
+        display: none;
+    }
+
+    .right-bar {
+        display: none;
+    }
+
+    .center-search {
+        display: none;
+    }
+
+    .para-mob{
+        font-size: smaller;
+        overflow: hidden;
+    }
+
+    .setting-hid{
+        display: none;
+    }
+
+    .stories{
+        height: 6rem;
+        border-radius: 50%;
+    }
+    
+}
+
+.feed-card {
+    box-shadow: 5px 5px 10px grey;
+}
+
+/* .heart-act:active{
+    color: red;
+} */
+
+/* landing page style */
+
+.overlay-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 10;
+}
+
+.nav-content {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 75%;
+    margin-top: 20px;
+}
+
+/* signin & signup */
+
+.modal-bg {
+    background: transparent;
+    backdrop-filter: blur(30px);
+}
+
+/* profile page */
+
+.profile-size{
+    width: 9rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #b92b27;
+}
+
+.highlight-size{
+    width: 4.7rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border: 2px solid #b92b27;
+}
+
+.post-size-profile{
+    width: 13.4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.mob-size{
+    width: 50%;
+}
+
+.anim-hover:hover{
+    color: blue;
+    transform: scale(1.001) translateY(-6px);
+    transition: 0.5s ease-in;
+}
+
+@media (max-width: 992px) {
+    
+    .mob-size{
+        width: 95%;
+    }
+
+    .high-mob{
+        display: none;
+    }
+
+    .post-size-profile{
+        width: 6rem;
+    }
+    
+}
+
+
+/* profile edit */
+
+.profile-edit-size{
+    width: 7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #b92b27;
+}
+.edit-prof{
+    position: relative;
+}
+
+.edit-icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    translate: -20% -70%;
+}
+.edit-icon-add{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    translate: 30% -20%;
+}
+
+/* @media (max-width: 992px){
+    .prof-add{
+        display: none;
+    }
+} */
+
+
+/* hover text */
+
+.hov-border{
+    position: relative;
+    padding: 0 0;
+}
+
+.hov-border:hover::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, #b92b27, #1565c0); 
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.hov-div-border{
+    position: relative;
+    padding: 0 0;
+}
+
+.hov-div-border:hover::after{
+    content: "";
+    position: absolute;
+    background: blue;
+    height: 100%;
+    width: 4px;
+    right: 100%;
+    bottom: 1px;
+    transition: 0.3s;
+
+}
+
+.highlight-size-mob{
+    width: 4.2rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border: 2px solid #b92b27;
+}
+
+@media (min-width: 1200px){
+    .mobile-story{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .pc-story{
+        display: none;
+    }
+}

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnSocial</title>
+    <!-- bs-cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+
+    <!-- fd-link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+    <!-- navbar section start -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OnSocial</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active hov-border" aria-current="page" href="./post-detail.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+          </ul>
+          <div class="d-flex border border-2 ps-2 rounded-4 w-25" role="search">
+            <i class="fa-solid fa-magnifying-glass d-flex justify-content-center align-items-center me-2"></i>
+            <input class="form-control border-0 rounded-end-4 w-100" type="search" placeholder="Search" aria-label="Search"/>
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </div>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./profile-page.html"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No-image" class="img-size ms-2"></a>
+            </li>
+            <li class="nav-item setting-hid">
+              <div class="my-lg-2">
+                <button type="button" class="btn border-0" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <i class="fa-solid fa-ellipsis-vertical fs-4"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Sign-in</button></a></li>
+                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Setting</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">About</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Help</button></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar section end -->
+
+    <!-- main content start -->
+
+    <div class="container-fluid p-0 ps-2 bg-custom">
+      <div class="row">
+        <!-- left side start -->
+        <div class="col-lg-2 col-2 left-box bg-white">
+          <div class="sticky-top">
+            <div class="left-bar rounded-4">
+              <a href="./post-detail.html" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border">
+                <span><i class="fa-solid fa-house my-1"></i></span><h5 class="ms-3 left-hov">Home</h5>
+              </a>
+            </div>
+            <div class="left-bar rounded-4">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 left-act hov-div-border">
+                <span><i class="fa-solid fa-compass my-1"></i></span><h5 class="ms-3 left-hov" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top"  
+                    data-bs-content="Currently it's unavailable!">Explore</h5>
+              </a>
+            </div>
+            <div class="left-bar rounded-4">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border">
+                <span><i class="fa-solid fa-bell my-1"></i></span><h5 class="ms-3 left-hov" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top"  
+                    data-bs-content="Currently it's unavailable!">Notification</h5>
+              </a>
+            </div>
+            <div class="left-bar rounded-4 dropend">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <span><i class="fa-solid fa-envelope my-1"></i></span><h5 class="ms-3 left-hov" >Message</h5>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-">
+                  <li>
+                    <div class="messages bg-white p-4 rounded-4">
+                        <div class="mes-head d-flex justify-content-between">
+                          <h5>Messages</h5>
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </div>
+                        <div class="search-msg border-0 rounded-pill d-flex fs-5 mt-3 bg-secondary-subtle">
+                          <i class="fa-solid fa-magnifying-glass p-2 me-3"></i>
+                          <input type="search" placeholder="Search Message" id="search-msg" class="w-100 rounded-end-pill px-3 border-0 bg-secondary-subtle">
+                        </div>
+                        <div class="message-box mt-3">
+                          <div class="d-flex justify-content-between">
+                            <h6 class="border-bottom border-3 border-primary">Primary</h6>
+                            <!-- <h6>General</h6>
+                            <h6>Request (4)</h6> -->
+                          </div>
+                          <div class="mt-3 d-flex">
+                            <div class="profile-photo1">
+                              <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                              <!-- <div class="active-s"></div> -->
+                            </div>
+                            <div class="msg-body ms-4">
+                              <h6 class="mb-0 mt-2">Paul</h6>
+                              <!-- <p class="text-secondary mt-0">Have a nice day</p> -->
+                            </div>
+                          </div>
+                          <div class="mt-3 d-flex">
+                            <div class="profile-photo">
+                              <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                            </div>
+                            <div class="msg-body ms-4">
+                              <h6 class="mb-0 mt-2">Hari</h6>
+                              <!-- <p class="text-secondary mt-0">Have a nice day</p> -->
+                            </div>
+                          </div>
+                          <div class="mt-3 d-flex">
+                            <div class="profile-photo">
+                              <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                            </div>
+                            <div class="msg-body ms-4">
+                              <h6 class="mb-0 mt-2">Akhil</h6>
+                              <!-- <p class="text-secondary mt-0">Have a nice day</p> -->
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-center mt-4">
+                            <button class="btn btn-outline-primary rounded-pill w-75">View All</button>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                  <!-- <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Dark</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Device theme</button></a></li> -->
+                  <!-- <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Help</button></a></li> -->
+                </ul>
+            </div>
+            <div class="left-bar rounded-4">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border">
+                <span><i class="fa-solid fa-bookmark my-1"></i></span><h5 class="ms-3 left-hov" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top"  
+                    data-bs-content="Currently it's unavailable!">Bookmark</h5>
+              </a>
+            </div>
+            <div class="left-bar rounded-4">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border">
+                <span><i class="fa-solid fa-chart-line my-1"></i></span><h5 class="ms-3 left-hov" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top"  
+                    data-bs-content="Currently it's unavailable!">Analytics</h5>
+              </a>
+            </div>
+            <div class="left-bar rounded-4 dropend">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <span><i class="fa-solid fa-palette my-1"></i></span><h5 class="ms-3 left-hov" >Theme</h5>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-">
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Light</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Dark</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Device theme</button></a></li>
+                  <!-- <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Help</button></a></li> -->
+              </ul>
+            </div>
+            <div class="left-bar rounded-4 dropend">
+              <a href="#" class="text-decoration-none text-secondary d-flex p-2 ps-4 py-4 hov-div-border" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <span><i class="fa-solid fa-gear my-1"></i></span><h5 class="ms-3 left-hov">Setting</h5>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-">
+                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Sign-in</button></a></li>
+                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Setting</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">About</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Help</button></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <!-- left side end -->
+        <!-- center start -->
+        <div class="col-lg-7 col-10">
+          <div class="row">
+            <div class="col-12">
+              <div class="row me-2 pc-story">
+                <div class="col-2">
+                  <div class="stories d-flex justify-content-between align-items-center rounded-4 mt-3">
+                    <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="stories d-flex justify-content-between align-items-center rounded-4 mt-3">
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>     
+                </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="stories d-flex justify-content-between align-items-center rounded-4 mt-3">
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>            
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="stories d-flex justify-content-between align-items-center rounded-4 mt-3">
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>
+                      <div class="story d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                        </div>
+                        <p class="mt-5 right-bar">Your name</p>
+                      </div>        
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mobile-story">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-2">
+                  <div class="d-flex justify-content-around align-items-center rounded-4 mt-3">
+                    <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3 edit-prof">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                          <div class="edit-icon-add">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-around align-items-center rounded-4 mt-3">
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>    
+                </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-between align-items-center rounded-4 mt-3">
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>         
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-between align-items-center rounded-4 mt-3">
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>
+                      <div class="d-flex justify-content-center flex-column align-items-center rounded-4">
+                        <div class="profile-photo mb-3">
+                          <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="highlight-size-mob rounded-circle border border-info border-opacity-25">
+                        </div>
+                        <!-- <p class="mt-5 right-bar">Your name</p> -->
+                      </div>        
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-2 rounded-pill mt-3 center-search">
+            <form action="create-post" class="d-flex justify-content-center">
+              <div class="profile-photo">
+                  <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25 me-2">
+              </div>
+              <input type="text" placeholder="What's on your mind?" id="create-post" class="rounded-pill border border-secondary px-3 w-75">
+              <input type="submit" value="create-post" class="btn btn-outline-primary rounded-pill ms-2 px-3">
+            </form>
+          </div>
+          <!-- feed section start -->
+          <div class="feeds row mt-3">
+            <div class="feed col-12 w-75 my-3 mx-auto bg-white p-3 rounded-4 feed-card">
+              <div class="user-feed-head d-flex justify-content-between flex-row">
+                <div class="prof-set d-flex ">
+                  <div class="profile-photo me-3">
+                    <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                  </div>
+                  <div class="name-prof mt-2">
+                    <h4 class="mb-0 para-mob">john</h4>
+                    <small class="mt-0 para-mob">Dubai, 15 mins ago</small>
+                  </div>
+                </div>
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+              <div class="photo-post mt-3 w-100 rounded-4">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="w-100 overflow-hidden rounded-4">
+              </div>
+              <div class="button-post d-flex justify-content-between mt-2 mx-3">
+                <div class="button-first gap-5">
+                  <span class="heart-act"><i class="fa-regular fa-heart fs-5"></i></span>
+                  <span><i class="fa-regular fa-comment-dots fs-5"></i></span>
+                  <span><i class="fa-solid fa-share-nodes fs-5"></i></span>
+                </div>
+                <div class="button-last">
+                  <span><i class="fa-regular fa-bookmark fs-5"></i></span>
+                </div>
+              </div>
+              <div class="liked d-flex mt-2">
+                <span class="ms-1"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <p class="ms-1 para-mob">Liked by <b>john</b> and <b>234 others</b></p>
+              </div>
+              <div class="caption">
+                <p class="mb-0 para-mob">sedtrygubhnsedrftvbhnrdtfvbhnrdtfvbndfg</p>
+                <div class="mt-0"><a class="text-secondary text-decoration-none para-mob">view all 233 comments</a></div>
+              </div>
+            </div>
+            <div class="feed col-12 w-75 my-3 mx-auto bg-white p-3 rounded-4 feed-card">
+              <div class="user-feed-head d-flex justify-content-between flex-row">
+                <div class="prof-set d-flex ">
+                  <div class="profile-photo me-3">
+                    <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                  </div>
+                  <div class="name-prof mt-2">
+                    <h4 class="mb-0 para-mob">john</h4>
+                    <small class="mt-0 para-mob">Dubai, 15 mins ago</small>
+                  </div>
+                </div>
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+              <div class="photo-post mt-3 w-100 rounded-4">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="w-100 overflow-hidden rounded-4">
+              </div>
+              <div class="button-post d-flex justify-content-between mt-2 mx-3">
+                <div class="button-first gap-5">
+                  <span><i class="fa-regular fa-heart fs-5"></i></span>
+                  <span><i class="fa-regular fa-comment-dots fs-5"></i></span>
+                  <span><i class="fa-solid fa-share-nodes fs-5"></i></span>
+                </div>
+                <div class="button-last">
+                  <span><i class="fa-regular fa-bookmark fs-5"></i></span>
+                </div>
+              </div>
+              <div class="liked d-flex mt-2">
+                <span class="ms-1"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <p class="ms-1 para-mob">Liked by <b>john</b> and <b>234 others</b></p>
+              </div>
+              <div class="caption">
+                <p class="mb-0 para-mob">sedtrygubhnsedrftvbhnrdtfvbhnrdtfvbndfg</p>
+                <div class="mt-0 para-mob"><a class="text-secondary text-decoration-none">view all 233 comments</a></div>
+              </div>
+            </div>
+            <div class="feed col-12 w-75 my-3 mx-auto bg-white p-3 rounded-4 feed-card">
+              <div class="user-feed-head d-flex justify-content-between flex-row">
+                <div class="prof-set d-flex ">
+                  <div class="profile-photo me-3">
+                    <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                  </div>
+                  <div class="name-prof mt-2">
+                    <h4 class="mb-0 para-mob">john</h4>
+                    <small class="mt-0 para-mob">Dubai, 15 mins ago</small>
+                  </div>
+                </div>
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+              <div class="photo-post mt-3 w-100 rounded-4">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="w-100 overflow-hidden rounded-4">
+              </div>
+              <div class="button-post d-flex justify-content-between mt-2 mx-3">
+                <div class="button-first gap-5">
+                  <span><i class="fa-regular fa-heart fs-5"></i></span>
+                  <span><i class="fa-regular fa-comment-dots fs-5"></i></span>
+                  <span><i class="fa-solid fa-share-nodes fs-5"></i></span>
+                </div>
+                <div class="button-last">
+                  <span><i class="fa-regular fa-bookmark fs-5"></i></span>
+                </div>
+              </div>
+              <div class="liked d-flex mt-2">
+                <span class="ms-1"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <p class="ms-1 para-mob">Liked by <b>john</b> and <b>234 others</b></p>
+              </div>
+              <div class="caption">
+                <p class="mb-0 para-mob">sedtrygubhnsedrftvbhnrdtfvbhnrdtfvbndfg</p>
+                <div class="mt-0 para-mob"><a class="text-secondary text-decoration-none">view all 233 comments</a></div>
+              </div>
+            </div>
+            <div class="feed col-12 w-75 my-3 mx-auto bg-white p-3 rounded-4 feed-card">
+              <div class="user-feed-head d-flex justify-content-between flex-row">
+                <div class="prof-set d-flex ">
+                  <div class="profile-photo me-3">
+                    <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                  </div>
+                  <div class="name-prof mt-2">
+                    <h4 class="mb-0 para-mob">john</h4>
+                    <small class="mt-0 para-mob">Dubai, 15 mins ago</small>
+                  </div>
+                </div>
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+              <div class="photo-post mt-3 w-100 rounded-4">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="w-100 overflow-hidden rounded-4">
+              </div>
+              <div class="button-post d-flex justify-content-between mt-2 mx-3">
+                <div class="button-first gap-5">
+                  <span><i class="fa-regular fa-heart fs-5"></i></span>
+                  <span><i class="fa-regular fa-comment-dots fs-5"></i></span>
+                  <span><i class="fa-solid fa-share-nodes fs-5"></i></span>
+                </div>
+                <div class="button-last">
+                  <span><i class="fa-regular fa-bookmark fs-5"></i></span>
+                </div>
+              </div>
+              <div class="liked d-flex mt-2">
+                <span class="ms-1"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <p class="ms-1 para-mob">Liked by <b>john</b> and <b>234 others</b></p>
+              </div>
+              <div class="caption">
+                <p class="mb-0 para-mob">sedtrygubhnsedrftvbhnrdtfvbhnrdtfvbndfg</p>
+                <div class="mt-0 para-mob"><a class="text-secondary text-decoration-none">view all 233 comments</a></div>
+              </div>
+            </div>
+            <div class="feed col-12 w-75 my-3 mx-auto bg-white p-3 rounded-4 feed-card">
+              <div class="user-feed-head d-flex justify-content-between flex-row">
+                <div class="prof-set d-flex ">
+                  <div class="profile-photo me-3">
+                    <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="img-size border border-info border-opacity-25">
+                  </div>
+                  <div class="name-prof mt-2">
+                    <h4 class="mb-0 para-mob">john</h4>
+                    <small class="mt-0 para-mob">Dubai, 15 mins ago</small>
+                  </div>
+                </div>
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+              </div>
+              <div class="photo-post mt-3 w-100 rounded-4">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image" class="w-100 overflow-hidden rounded-4">
+              </div>
+              <div class="button-post d-flex justify-content-between mt-2 mx-3">
+                <div class="button-first gap-5">
+                  <span><i class="fa-regular fa-heart fs-5"></i></span>
+                  <span><i class="fa-regular fa-comment-dots fs-5"></i></span>
+                  <span><i class="fa-solid fa-share-nodes fs-5"></i></span>
+                </div>
+                <div class="button-last">
+                  <span><i class="fa-regular fa-bookmark fs-5"></i></span>
+                </div>
+              </div>
+              <div class="liked d-flex mt-2">
+                <span class="ms-1"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <span><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No image"></span>
+                <p class="ms-1 para-mob">Liked by <b>john</b> and <b>234 others</b></p>
+              </div>
+              <div class="caption">
+                <p class="mb-0 para-mob">sedtrygubhnsedrftvbhnrdtfvbhnrdtfvbndfg</p>
+                <div class="mt-0 para-mob"><a class="text-secondary text-decoration-none">view all 233 comments</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- feed section end -->
+        </div>
+        <!-- center end -->
+        <!-- right side start -->
+        <div class="col-lg-3 mt-4 px-4 pt-3 right-bar">
+          <div class="sticky-top">
+            <div class="messages bg-white p-4 rounded-4">
+            <div class="mes-head d-flex justify-content-between">
+              <h5>Messages</h5>
+              <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+            <div class="search-msg border-0 rounded-pill d-flex fs-5 mt-3 bg-secondary-subtle">
+              <i class="fa-solid fa-magnifying-glass p-2 me-3"></i>
+              <input type="search" placeholder="Search Message" id="search-msg" class="w-100 rounded-end-pill px-3 border-0 bg-secondary-subtle">
+            </div>
+            <div class="message-box mt-3">
+              <div class="d-flex justify-content-between">
+                <h6 class="border-bottom border-3 border-primary">Primary</h6>
+                <h6>General</h6>
+                <h6>Request (4)</h6>
+              </div>
+              <div class="mt-3 d-flex">
+                <div class="profile-photo1">
+                  <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                  <div class="active-s"></div>
+                </div>
+                <div class="msg-body ms-4">
+                  <h6 class="mb-0">Paul</h6>
+                  <p class="text-secondary mt-0">Have a nice day</p>
+                </div>
+              </div>
+              <div class="mt-3 d-flex">
+                <div class="profile-photo">
+                  <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                </div>
+                <div class="msg-body ms-4">
+                  <h6 class="mb-0">Paul</h6>
+                  <p class="text-secondary mt-0">Have a nice day</p>
+                </div>
+              </div>
+              <div class="mt-3 d-flex">
+                <div class="profile-photo1">
+                  <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                  <div class="active-s"></div>
+                </div>
+                <div class="msg-body ms-4">
+                  <h6 class="mb-0">Paul</h6>
+                  <p class="text-secondary mt-0">Have a nice day</p>
+                </div>
+              </div>
+              <div class="mt-3 d-flex">
+                <div class="profile-photo1">
+                  <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                  <div class="active-s"></div>
+                </div>
+                <div class="msg-body ms-4">
+                  <h6 class="mb-0">Paul</h6>
+                  <p class="text-secondary mt-0">Have a nice day</p>
+                </div>
+              </div>
+              <div class="mt-3 d-flex">
+                <div class="profile-photo">
+                  <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                </div>
+                <div class="msg-body ms-4">
+                  <h6 class="mb-0">Paul</h6>
+                  <p class="text-secondary mt-0">Have a nice day</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn-outline-primary rounded-pill w-75">View All</button>
+              </div>
+            </div>
+          </div>
+          <div class="request-msg mt-3 bg-white p-4 rounded-4">
+            <h5 class="text-secondary">Request</h5>
+            <div class="mt-3 d-flex">
+              <div class="profile-photo">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+              </div>
+              <div class="msg-body ms-4">
+                <h6 class="mb-0">Paul</h6>
+                <p class="text-secondary mt-0">5 mutual friends</p>
+              </div>
+            </div>
+            <div class="button-accept mb-4 d-flex">
+              <button class="btn btn-primary rounded-pill ms-3">Accept</button>
+              <button class="btn btn-outline-danger rounded-pill ms-3">Decline</button>
+            </div>
+            <div class="mt-3 d-flex">
+              <div class="profile-photo1">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+                <div class="active-s"></div>
+              </div>
+              <div class="msg-body ms-4">
+                <h6 class="mb-0">Paul</h6>
+                <p class="text-secondary mt-0">5 mutual friends</p>
+              </div>
+            </div>
+            <div class="button-accept mb-4 d-flex">
+              <button class="btn btn-primary rounded-pill ms-3">Accept</button>
+              <button class="btn btn-outline-danger rounded-pill ms-3">Decline</button>
+            </div>
+            <div class="mt-3 d-flex">
+              <div class="profile-photo">
+                <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="no image" class="img-size border border-info border-opacity-25">
+              </div>
+              <div class="msg-body ms-4">
+                <h6 class="mb-0">Paul</h6>
+                <p class="text-secondary mt-0">5 mutual friends</p>
+              </div>
+            </div>
+            <div class="button-accept mb-4 d-flex">
+              <button class="btn btn-primary rounded-pill ms-3">Accept</button>
+              <button class="btn btn-outline-danger rounded-pill ms-3">Decline</button>
+            </div>
+            <div class="d-flex justify-content-center mt-">
+              <button class="btn btn-outline-primary rounded-pill w-75">View All</button>
+            </div>
+          </div>
+          </div>
+      </div>
+      <!-- right side end -->
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    });
+  </script>
+
+    <!-- main content end -->
+
+</body>
+</html>

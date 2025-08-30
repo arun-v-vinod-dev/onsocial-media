@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social media</title>
+    <!-- bs-cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+
+    <!-- fd-link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- external css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OnSocial</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active hov-border" aria-current="page" href="./post-detail.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+          </ul>
+          <div class="d-flex border border-2 ps-2 rounded-4 w-25" role="search">
+            <i class="fa-solid fa-magnifying-glass d-flex justify-content-center align-items-center me-2"></i>
+            <input class="form-control border-0 rounded-end-4 w-100" type="search" placeholder="Search" aria-label="Search"/>
+            <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          </div>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No-image" class="img-size ms-2"></a>
+            </li> -->
+            <li class="nav-item setting-hid">
+              <div class="my-lg-2">
+                <button type="button" class="btn border-0" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <i class="fa-solid fa-ellipsis-vertical fs-4"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a href="./index.html" class="text-decoration-none"><button class="dropdown-item" type="button">Sign-in</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Setting</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">About</button></a></li>
+                  <li><a href="#" class="text-decoration-none"><button class="dropdown-item" type="button">Help</button></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> -->
+    <!-- <div class="modal-dialog modal-lg modal-dialog-centered modal-bg"> -->
+      <!-- <div class="modal-content modal-bg"> -->
+        <!-- <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">OnSocial</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body">
+          <div class="rounded-4 shadow-lg">
+              <div class="row p-5 d-flex justify-content-center">
+                <div class="col-12 py-3 ">
+                  <div class="m-3 d-flex justify-content-center">
+                    <h5 class="text-center text-dark fw-bold">Edit profile</h5>
+                  </div>
+                  <div class="col d-flex justify-content-center m-3">
+                    <div class="edit-prof">
+                        <img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No-image" class="rounded-circle profile-edit-size">
+                        <div class="edit-icon">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                    <input type="text" class="form-control rounded" id="floatingInput" placeholder="Name" required>
+                    <label for="floatingInput">Name</label>
+                  </div>
+                  <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                    <input type="text" class="form-control rounded" id="floatingInput" placeholder="Username" required>
+                    <label for="floatingInput">Username</label>
+                  </div>
+                  
+                  <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                    <input type="text" class="form-control rounded" id="floatingInput" placeholder="Pronouns" required>
+                    <label for="floatingInput">Pronouns</label>
+                  </div>
+                  <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                    <div class="form-floating">
+                        <textarea class="form-control rounded" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Bio</label>
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                    <select class="form-select rounded text-secondary" aria-label="Default select example">
+                        <option selected>Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <!-- <option value="3">Other</option> -->
+                    </select>
+                  </div>
+                  <!-- <div class="form-floating mb-3 w-75 ms-auto me-auto">
+                    <input type="email" class="form-control rounded-pill" id="floatingemail" placeholder="name@example.com" required>
+                    <label for="floatingemail">Email address</label>
+                  </div> -->
+                  <div class="form-floating w-75 ms-auto me-auto mt-0 anim-hover">
+                    <!-- <button type="button" class="btn btn-outline-info">Info</button> -->
+                     <a href="#" class="text-decoration-none text-dark">Add link</a>
+                  </div>
+                  <div class="form-floating w-75 ms-auto me-auto mt-3 anim-hover d-flex justify-content-between">
+                    <!-- <button type="button" class="btn btn-outline-info">Info</button> -->
+                     <p href="#" class="text-decoration-none text-dark">Music</p>
+                     <a href="#" class="text-decoration-none text-dark">Add music to your profile ></a>
+                  </div>
+                  <hr>
+                  <div class="form-floating w-75 ms-auto me-auto mt-3 d-flex flex-column">
+                    <!-- <button type="button" class="btn btn-outline-info">Info</button> -->
+                     <p class="mb-0">Others links</p>
+                     <a href="#" class="text-dark mt-2">Switch to professional account</a>
+                     <a href="#" class="text-dark mt-2">Personal information setting</a>
+                     <a href="#" class="text-dark mt-2">Show your profile is verified</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+  <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button> -->
+</body>
+</html>
