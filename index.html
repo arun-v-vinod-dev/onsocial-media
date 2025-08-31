@@ -75,10 +75,13 @@
                 <a class="nav-link active" aria-current="page" href="./post-detail.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+                <!-- <a class="nav-link" aria-current="page" href="#">About</a> -->
+                <a class="nav-link" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvasabout" role="button" aria-controls="offcanvasExample">
+                  About
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Help</a>
+                <a class="nav-link" aria-current="page" data-bs-toggle="offcanvas" href="#offcanvashelp" role="button" aria-controls="offcanvasExample">Help</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"><img src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="No-image" class="img-size ms-2"></a>
@@ -88,7 +91,52 @@
         </div>
       </div>
     </nav>
-   </div>
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvasabout" aria-labelledby="offcanvasabout">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasabout">About</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-secondary">
+          <p>Welcome to <strong>OnSocial</strong>, a space built for creativity, connection, and community.
+              Our mission is to bring people closer by sharing stories, ideas, and experiences that inspire.
+              Whether it's posting your thoughts, sharing photos, or engaging in conversations — we give you the tools to connect with the world.
+          </p>
+          
+          <p>This is a responsive social media project using HTML, CSS & Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top text-bg-dark" tabindex="-1" id="offcanvashelp" aria-labelledby="offcanvashelp">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvashelp">Help</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-secondary d-flex">
+          <div class="text-secondary mx-5 d-flex flex-column justify-content-center">
+            <p class="mb-1">Get to Know us:</p>
+            <span>About OnSocial</span>
+            <span>Account</span>
+            <span>Help</span>
+          </div>
+          <div class="text-secondary d-flex justify-content-center flex-column mx-5">
+            <p class="mb-1">
+            Connect with us:
+            </p>
+            <span><i class="fa-brands fa-facebook mb-1"></i> Facebook</span>
+            <span><i class="fa-brands fa-instagram mb-1"></i> Instagram</span>
+            <span><i class="fa-brands fa-square-x-twitter mb-1"></i> Twitter</span>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- nav end -->
 
   <div class="overlay-content">
     <h1 class="fs-1 fw-bold">Your Community's Future</h1>
