@@ -206,7 +206,7 @@ body{
     }
 
     .post-size-profile{
-        width: 6rem;
+        width: 5rem;
     }
     
 }
@@ -311,7 +311,7 @@ body{
     bottom: 30%;
     left: 40%;
     opacity: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
