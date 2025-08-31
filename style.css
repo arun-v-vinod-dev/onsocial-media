@@ -120,6 +120,10 @@ body{
         height: 6rem;
         border-radius: 50%;
     }
+
+    .story-mob{
+        display: none;
+    }
     
 }
 
